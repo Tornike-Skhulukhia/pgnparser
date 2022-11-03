@@ -13,9 +13,8 @@ except ImportError:
 
 from setuptools import setup, find_packages
 
-f = open('README.rst','rU')
-long_description = f.read()
-f.close()
+with open('README.rst') as f:
+    long_description = f.read()
 
 setup(
     name = 'pgnparser',
